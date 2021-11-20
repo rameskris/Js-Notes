@@ -129,3 +129,88 @@ console.log(`here is the use case ${text6.toUpperCase()}`) //here is the use cas
 1.Numbers
 *************************************** 
 */
+let ra=7;
+const pi=3.14
+//math operators +,-,*,/,**,%
+console.log(2**2)//s s to power 2
+//order of operation -BIMDAS i for indeces- power of
+console.log(2*(10-4)**2)
+
+let count=1
+
+count=count+1
+console.log(count)//2
+//
+count++//3
+console.log(count++)//3+1 but only shows 3 if u do ++count its shows 4
+console.log(count)//4
+console.log()//4-1
+console.log(count)///3
+console.log(count+=12)//15
+
+console.log(5/"g")//Nan not a number
+//we can concate numbers with string its rusults one string
+
+console.log("the no of post" + " "+count + " at my fb")
+
+// a set of functions and constants defined as properties of the Math object
+console.log(Math.pow(2,10)) //2 to the power of 10
+console.log(Math.round(10.4)) //10
+console.log(Math.ceil(10.4))//11
+console.log(Math.floor(10.4))//10
+console.log(Math.abs(-4))//4
+console.log(Math.max(5,6,9))//9
+console.log(Math.random()*10)//random between 0 to 1
+console.log(Math.round(Math.random()*10))//if u want full integer between 0to 1
+console.log(Math.sqrt(3))//3**0.5: the square root of 3
+Math.pow(3, 1/3) //3**(1/3): the cube root of 3
+
+//Arrays..
+let names=['ram','lal','kand']
+names[2]='nomore'
+console.log(names[5])
+//array property
+console.log(names.length) 
+
+//array methods
+let renames=names.join(',')
+console.log(renames) 
+console.log(typeof renames)
+console.log(names.concat(['aria','ravi'])) //its not alter original it ruterns new one
+console.log(names.push('tr'))//4 return new lenth and add tr to array its alter the original
+console.log(names.pop('tr'))//4 return poped once from arr and  its alter the original
+//you can create array by using spread methods ...
+let newNames=['cap',...names,'ame']
+console.log(newNames.length)
+
+let ori=[1,true,4]
+let copy=[...ori]
+console.log(copy)
+console.log(ori[1])
+let digits=[...'12345']
+console.log(digits)//['1', '2', '3', '4', '5']
+
+//create an array with array cosntructor()
+let a=new Array(10)
+console.log(a)//(10) [empty × 10]This technique creates an array with the specified length
+             //Note that no values are stored in the array
+let b= new Array(5, 4, 3, 2, 1,true)
+console.log(b)//(6)length [5, 4, 3, 2, 1, true]
+
+//
+let c=new Array(1)//[empty]length: 1 //When the Array() constructor function 
+                    //is invoked with one numeric argument
+                    //it uses that argument as an array length we use array.of() to address it
+console.log(c)
+
+Array.of() //[]; returns empty array with no arguments
+Array.of(5) // => [10]; can create arrays with a single numeric argument
+let abc=Array.of(1,2,3)// => [1, 2, 3]
+console.log(abc)
+//
+console.log(Array.from('quo'))
+
+// mix of values
+let arr = [ 'Apple', { name: 'John' }, true, function() { alert('hello'); } ];
+console.log(arr[3]())
+
