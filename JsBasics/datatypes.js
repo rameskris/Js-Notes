@@ -211,6 +211,39 @@ console.log(abc)
 console.log(Array.from('quo'))
 
 // mix of values
-let arr = [ 'Apple', { name: 'John' }, true, function() { alert('hello'); } ];
-console.log(arr[3]())
+//let arr = [ 'Apple', { name: 'John' }, true, function() { alert('hello'); } ];
+//console.log(arr[3]())
+
+//NULL AND UNDEFINED
+let age;
+console.log(age,age+3,`the age is ${age}`)//undefined NaN 'the age is undefined'
+
+let ag=null;
+console.log(ag,ag+3,`the age is ${ag}`)//null 3 'the age is null' ag becomes zero with add 3 in
+                                        // string its null
+
+//booleans and comparisions
+let newem="aa@Game.com"
+console.log(newem.includes('@'))//true
+//loose vs strict comparision
+//loose == or !=
+console.log(25=='25')//true becoz its converts string to number in loosly 
+//strict === o !==
+console.log(25==='25')//false //ther is no type conversion here
+
+// type conversion
+let co='200'
+console.log(co+1)//2001
+
+//to convert to number
+co=Number(co)
+console.log(co+1)//201
+let nau=Number("gggg")//NaN
+//to convet to string
+console.log(String(50))
+//to convet to boolean
+console.log(Boolean(100))//true becoz its truthy valuse if zero means falsy
+console.log(Boolean('0'))//truthy becoz string of any lengths are truthy
+                         // but empty string falssy becoz no length
+
 
