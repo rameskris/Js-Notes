@@ -119,9 +119,70 @@ lo.setAttribute('style','color:red;')
 //if we use set attribute it rewrite pre exist one
 //so use style property
 const h3obj=document.querySelector('h3')
-h3obj.style.margin='50px'
-h3obj.style.color='red'
-h3obj.style.color=""
+// h3obj.style.margin='50px'
+// h3obj.style.color='red'
+// h3obj.style.color=""
 //in js font-size become fontSize here js minus means subtract so use camelCase
 
 h3obj.style.fontSize='50px'
+
+//adding and removing classes
+
+const c=document.querySelector('.dummy')
+console.log(c.classList)
+c.classList.add('sucess')
+c.classList.remove('sucess')
+
+const t=document.querySelectorAll('.test p')
+t.forEach(el=>{
+  if(el.innerText.includes('error')){
+    el.classList.add('dummy')
+  }else{
+    el.classList.add('sucess')
+  }
+  //use textContent insted of innertext
+  //innerText no show dispaly none
+})
+
+//parent child relationship
+const pa=document.querySelector('article')
+//pa.childeren give all the childeren in html 
+//collection but we cant use foreach on html
+//collection so convert to aray first
+Array.from(pa.children).forEach(p=>{
+  p.classList.add('article-element')
+})
+//to get parent element
+//use pa.parentElement
+
+//to getsibiligs
+//pa.nextElementSibling
+//to get previous sibilings
+//pa.previousElementSibling
+//chaining
+//parentelem.parentelm
+
+const par=document.querySelector('.par')
+Array.from(par.children).forEach(pa=>{
+  pa.classList.add('danger')
+  
+})
+
+
+//EVENTS
+//select
+//add event listner describe 1.arg what events eg click
+//second arg is a function of that listner
+//when events happen browser automatically gives detail about event object as function arg here e
+
+const button=document.querySelector('button')
+button.addEventListener('click',()=>{
+  console.log('you click me')
+})
+
+const items=document.querySelectorAll('ul')
+items.forEach(it=>{
+  it.addEventListener('click',e=>{
+    e.target.style.textDecoration='line-through'
+  })
+})

@@ -1,0 +1,30 @@
+h3 {
+    color: brown;
+}
+.dummy{
+    padding: 10px;
+    color: crimson;
+    border: 1px solid black;
+}
+.sucess {
+    padding: 10px;
+    color: aqua;
+    border: 1px dotted limegreen;
+}
+
+.danger{
+    color: red;
+    background: grey;
+    font-size: 30px;
+}
+
+
+ul li{
+    width:200px;
+    list-style: none;
+    border :1px solid grey;
+    text-align: center;
+    background: darkgrey;
+    margin:5px;
+    padding: 8px;
+}
