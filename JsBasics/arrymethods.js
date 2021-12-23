@@ -35,3 +35,36 @@ const saleProduct=products.map(product=>{
 })
 
 console.log(saleProduct)
+                                 
+//reduce 
+const values=[10,20,60,40,70,90,30]
+const nValues=values.reduce((acc,cur)=>{
+    if(cur>50){
+        acc++
+    }
+    return acc
+},100)
+console.log(` reduce ${nValues}`)
+//acc cur return
+//100  10   100
+//20 60    101
+//21 40    101
+//21  70   102
+//22 90    103
+//23 30    103
+
+const elements=[
+    {name:'gold',price:20},
+    {name:'diamond',price:50},
+    {name:'platinum',price:60},
+    {name:'gold',price:10},
+    {name:'silver',price:40},
+]
+const tot=elements.reduce((acc,cur)=>{
+     if(cur.name==='gold'){
+         acc+=cur.price
+     }
+     console.log(acc)
+     return acc;
+},0)
+console.log(tot)
