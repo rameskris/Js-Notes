@@ -68,3 +68,32 @@ const tot=elements.reduce((acc,cur)=>{
      return acc;
 },0)
 console.log(tot)
+
+const redPrac=[1,12,4,5,9,11]
+
+const addeach=redPrac.reduce((acc,curr)=>acc+curr)
+console.log(`Redadd  ${addeach}`)
+
+const bigger=redPrac.reduce((acc,curr)=>acc>curr? acc:curr,10)
+
+console.log(bigger)
+//count no. of y and n using reduce
+const votes=['y','n','n','y','y','y','y','y','n','y','y','y','n']
+
+const totyn=votes.reduce((tally,val)=>{
+    if(tally[val]){
+        tally[val]++
+    }else{
+        tally[val]=1
+    }
+    return tally
+
+},{})
+
+console.log(totyn)
+
+
+
+
+
+//find method
