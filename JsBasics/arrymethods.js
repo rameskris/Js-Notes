@@ -57,6 +57,7 @@ console.log(userQUeryRes)
 //map
 //creates new array
 //map them in to new array
+//difference is for each doesnt provide you a new arry map does
 
 const prices=[10,20,30,12,33]
 const salesPrices=prices.map(price=>price/2)
