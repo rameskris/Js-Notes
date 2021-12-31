@@ -46,6 +46,6 @@ const filterTodos=(term)=>{
 
 //searching todo
 search.addEventListener('keyup',()=>{
-    const term=search.value.trim()
+    const term=search.value.trim().toLowerCase()
     filterTodos(term)
 })
