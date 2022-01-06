@@ -1,0 +1,15 @@
+/* .done{
+    text-decoration: line-through;
+    color: grey;
+} */
+#boxes{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.box{
+    width: 200px;
+    height: 200px;
+
+}
